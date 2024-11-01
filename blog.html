@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs-Subhadeep</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="subhadeep.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body class="bg-black black:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+  <!-- Sidebar for Desktop -->
+  <aside class="hidden md:flex fixed top-0 left-0 w-64 h-full bg-black-800 text-white flex-col">
+    <nav class="flex-1 p-4 flex flex-col justify-center text-black font-bold space-y-2">
+      <a href="index.html" class="text-gray-700 text-center p-4 dark:text-gray-300"><i class="fas fa-home"></i></a>
+      <a href="about.html" class="text-gray-700 text-center p-4  dark:text-gray-300"><i class="fas fa-user"></i></a>
+      <a href="blog.html" class="text-gray-700 text-center p-4  dark:text-gray-300"><i class="fas fa-pencil"></i></a>
+      <a href="project.html" class="text-gray-700 text-center p-4  dark:text-gray-300"><i class="fas fa-briefcase"></i></a>
+      <a href="resume.html" class="text-gray-700 text-center p-4  dark:text-gray-300"><i class="fas fa-file-alt"></i></a>
+    </nav>
+  </aside>
+
+      <!-- Mobile Navigation -->
+      <div class="md:hidden fixed bottom-0 w-full bg-black black:bg-gray-900 shadow-md">
+        <div class="flex justify-around py-5">
+          <a href="index.html" class="text-gray-700 dark:text-gray-300"><i class="fas fa-home"></i></a>
+          <a href="about.html" class="text-gray-700 dark:text-gray-300"><i class="fas fa-user"></i></a>
+          <a href="blog.html" class="text-gray-700 dark:text-gray-300"><i class="fas fa-pencil-alt"></i></a>
+          <a href="project.html" class="text-gray-700 dark:text-gray-300"><i class="fas fa-briefcase"></i></a>
+          <a href="resume.html" class="text-gray-700 dark:text-gray-300"><i class="fas fa-file-alt"></i></a>
+        </div>
+      </div>
+
+
+         <!-- Main Feed -->
+         <main class="md:ml-64 md:w-1/2 lg:w-7/12 p-8"> <!-- Added order for Flexbox -->
+          <!-- Header for Projects -->
+          <div class="mb-6">
+            <h1 class="text-3xl font-bold">My Blogs</h1>
+          </div>
+          
+          <!-- Project Card -->
+          <div class="bg-white dark:bg-white-500 text-black font-mono font-bold rounded shadow-sm p-4 mb-4">
+            <p>Blog 1 Description...</p>
+          </div>
+  
+          <!-- Repeat Project Card as needed for more projects -->
+          <div class="bg-white dark:bg-white-500 text-black font-mono font-bold rounded shadow-sm p-4 mb-4">
+            <p>Blog 2 Description...</p>
+          </div>
+          
+          <div class="bg-white dark:bg-white-500 text-black font-mono font-bold rounded shadow-sm p-4 mb-4">
+            <p>Blog 3 Description...</p>
+          </div>
+          
+        </main>
+        <br><br><br><br>
+    </div>
+  </div>
+</body>
+</html>
