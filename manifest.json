@@ -2,6 +2,7 @@
     "name": "Subhadeep Paul",
     "short_name": "Subhadeep Paul",
     "start_url": "/",
+    "display": "standalone",
     "icons": [
         {
             "src": "subhadeep.png",
