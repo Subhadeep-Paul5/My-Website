@@ -1,1 +1,1 @@
-# My-Website
+Welcome! This is my personal portfolio websitte, I am Subhadeep Paul, a passionate individual with interests in entrepreneurship, web development, poetry, and social impact initiatives. This portfolio showcases my skills, projects, and accomplishments. I work to inspire and connect with like-minded individuals through my work.
