@@ -30,7 +30,7 @@
         }
   </script>
 </head>
-<body class="bg-black black:bg-gray-900 text-gray-900 dark:text-gray-100">
+<body class="bg-secondary text-primary font-mono">
 
   <!-- Sidebar for Desktop -->
   <aside class="hidden md:flex fixed top-0 left-0 w-64 h-full bg-black-800 text-white flex-col">
@@ -84,6 +84,7 @@
                         <p class="mb-4">.  passions and goals. Madat is here to guide students toward activities in academics, arts, technology, sports, and social impact, creating pathways for them to not only build skills but also cultivate new interests. By aligning opportunities with each student’s unique strengths, we empower them to grow confidently and craft a compelling portfolio for college and beyond.</p>
                     </div>
                 </div>
+          <br>
                 <button class="show-more-btn mt-4 text-blue-600 hover:text-blue-800 font-mono">Show More</button>
         </div>
           
@@ -154,5 +155,25 @@
       <br><br><br><br>
     </div>
   </div>
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const showMoreButtons = document.querySelectorAll('.show-more-btn');
+            
+            showMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const article = this.closest('article');
+                    const hiddenContent = article.querySelector('.hidden-content');
+                    
+                    if (hiddenContent.classList.contains('hidden')) {
+                        hiddenContent.classList.remove('hidden');
+                        this.textContent = 'Show Less';
+                    } else {
+                        hiddenContent.classList.add('hidden');
+                        this.textContent = 'Show More';
+                    }
+                });
+            });
+        });
+  </script>
 </body>
 </html>
