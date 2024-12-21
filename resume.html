@@ -1,115 +1,31 @@
 <!DOCTYPE html>
-
-
-
 <html lang="en">
-
-
-
 <head>
-
-
-
     <meta charset="UTF-8">
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-  <title>Subhadeep Paul</title>
-
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="subhadeep.png">
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subhadeep Paul</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="subhadeep.png">
     <script src="https://cdn.tailwindcss.com"></script>
-
-
-
-       
-
-
-
     <script>
-
-
-
         tailwind.config = {
-
-
-
             darkMode: 'class',
-
-
-
             theme: {
-
-
-
                 extend: {
-
-
-
                     colors: {
-
-
-
-                        primary: '#FFD700',
-
-
-
-                        secondary: '#1a1a1a',
-
-
-
+                        primary: '#4a5568',
+                        secondary: '#f7fafc',
                     },
-
-
-
                 },
-
-
-
             },
-
-
-
         }
-
-
-
-    
-
-
-
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
-
-
-
-<script>
-
-
-
-    document.addEventListener("DOMContentLoaded", function() {
-
-
-
-        lucide.createIcons();
-
-
-
-    });
-
-
-
-</script>
-
-
-	                <style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            lucide.createIcons();
+        });
+    </script>
+    <style>
         .education-timeline {
             position: relative;
             padding-left: 3rem;
@@ -123,7 +39,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background-color: #FFD700;
+            background-color: #4a5568;
         }
         .education-item {
             position: relative;
@@ -137,8 +53,8 @@
             width: 1rem;
             height: 1rem;
             border-radius: 50%;
-            background-color: #FFD700;
-            box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.2);
+            background-color: #4a5568;
+            box-shadow: 0 0 0 4px rgba(74, 85, 104, 0.2);
         }
         .logo {
             width: 5rem;
@@ -150,20 +66,21 @@
             position: absolute;
             left: -5.5rem;
             top: 0;
+        }
         .logo img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
         .details {
-            background-color: rgba(255, 215, 0, 0.1);
+            background-color: rgba(74, 85, 104, 0.1);
             padding: 1.5rem;
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-left: 1rem;
         }
         .details h3 {
-            color: #FFD700;
+            color: #4a5568;
             margin-bottom: 0.5rem;
         }
         .details p {
@@ -183,93 +100,29 @@
             margin-right: 1rem;
             border-radius: 50%;
         }
-</style>
-
-
-
+    </style>
 </head>
-
-
-
 <body class="bg-secondary text-primary min-h-screen font-mono flex flex-col">
-
-
-
-   <header class="p-4">
-
-
-
-       <div class="fixed top-5 left-1/2 border-2 border-primary transform -translate-x-1/2 bg-secondary px-6 py-3 rounded-full shadow-lg">
-
-
-
-    <nav class="flex space-x-2">
-
-
-
-
-
-
-
-         <a href="index.html" class="bg-secondary text-primary px-3 py-1.5 rounded-lg border border-primary hover:bg-primary hover:text-secondary transition duration-300">
-
-
-
-        <i data-lucide="home" class="w-6 h-6"></i>
-
-
-
-    </a>
-
-
-
-    <a href="blog.html" class="bg-secondary text-primary px-3 py-1.5 rounded-lg border border-primary hover:bg-primary hover:text-secondary transition duration-300">
-
-
-
-    <i data-lucide="book-open" class="w-6 h-6"></i>
-
-
-
-</a>
-
-
-
-<a href="resumez.html" class="bg-primary text-secondary px-3 py-1.5 rounded-lg hover:bg-yellow-400 transition duration-300">
-
-
-
-    <i data-lucide="file-text" class="w-6 h-6"></i>
-
-
-
-</a>
-
-
-
-    </nav>
-
-
-
-         </div>   
-
-
-
-   </header>
-
-
-
-
-
-
+    <header class="p-4">
+        <div class="fixed top-5 left-1/2 border-2 border-primary transform -translate-x-1/2 bg-secondary px-6 py-3 rounded-full shadow-lg">
+            <nav class="flex space-x-2">
+                <a href="index.html" class="bg-secondary text-primary px-3 py-1.5 rounded-lg border border-primary hover:bg-primary hover:text-secondary transition duration-300">
+                    <i data-lucide="home" class="w-6 h-6"></i>
+                </a>
+                <a href="blog.html" class="bg-secondary text-primary px-3 py-1.5 rounded-lg border border-primary hover:bg-primary hover:text-secondary transition duration-300">
+                    <i data-lucide="book-open" class="w-6 h-6"></i>
+                </a>
+                <a href="resumez.html" class="bg-primary text-secondary px-3 py-1.5 rounded-lg hover:bg-gray-600 transition duration-300">
+                    <i data-lucide="file-text" class="w-6 h-6"></i>
+                </a>
+            </nav>
+        </div>   
+    </header>
 
     <main class="pt-20 flex-grow container mx-auto p-4">
-
-
-
-           <h1 class="text-4xl font-bold mb-6">Resume</h1><br>
-	    <h2 class="text-3xl font-bold mb-6">My Education</h2>
-		    <div class="education-timeline">
+        <h1 class="text-4xl font-bold mb-6">Resume</h1>
+        <h2 class="text-3xl font-bold mb-6">My Education</h2>
+        <div class="education-timeline">
             <div class="education-item">
                 <div class="logo">
                     <img src="loyolaschool.jpeg" alt="Loyola School Logo" />
@@ -281,7 +134,6 @@
                     <p class="mt-2">Loyola School, Assam, run by Jesuits, offers top-quality education. It focuses on both academics and personal growth with a balanced approach. The school teaches values like service, compassion, and leadership. Students are prepared to make a positive difference in society.</p>
                 </div>
             </div>
-
             <div class="education-item">
                 <div class="logo">
                     <img src="default.png" alt="GSA Logo" />
@@ -293,321 +145,148 @@
                     <p class="mt-2">Currently pursuing high school diploma at GSA.</p>
                 </div>
             </div>
-	    </div>
+        </div>
 
-
-
-            
-          <br>
-
-
-<h2 class="text-3xl font-bold mb-4"><br>Work Experience</h2>
-      <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-<div class="flex items-start mb-4">
-              <img src="madat.png" alt="MADAT Logo" class="w-16 h-16 mr-4 rounded-lg">
-              <div>
-                  <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">MADAT</span></h5>
-                  <p>Since October 2024 to Present</p>
-              </div>
-          </div>
-          <div class="w-full">
-              <h6 class="text-1xl font-mono">
-                Madat is a dedicated nonprofit organization focused on helping high school students navigate the often-overwhelming world of extracurricular activities. If you’re struggling to find activities that fit your interests, Madat is here to guide you. We specialize in connecting students with meaningful opportunities in areas like academics, arts, technology, sports, and social impact. Our mission is to empower students by aligning them with activities that match their strengths and passions. Through these experiences, students can build essential skills, explore new interests, and create strong portfolios that prepare them for college and future aspirations.
-            </h6>
-	  </div>
-
-                   
-      </div>
-
-
-
-        <br>
-
-
-
-      <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-
-<div class="flex items-start mb-4">
-            <img src="dex.png" alt="Dex Logo" class="w-16 h-16 mr-4 rounded-lg">
-            <div>
-                <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">Dex</span></h5>
-                <p>Since November 2024 to Present</p>
+        <h2 class="text-3xl font-bold mb-4 mt-8">Work Experience</h2>
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <div class="flex items-start mb-4">
+                <img src="madat.png" alt="MADAT Logo" class="w-16 h-16 mr-4 rounded-lg">
+                <div>
+                    <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">MADAT</span></h5>
+                    <p>Since October 2024 to Present</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <h6 class="text-1xl font-mono">
+                    Madat is a dedicated nonprofit organization focused on helping high school students navigate the often-overwhelming world of extracurricular activities. If you're struggling to find activities that fit your interests, Madat is here to guide you. We specialize in connecting students with meaningful opportunities in areas like academics, arts, technology, sports, and social impact. Our mission is to empower students by aligning them with activities that match their strengths and passions. Through these experiences, students can build essential skills, explore new interests, and create strong portfolios that prepare them for college and future aspirations.
+                </h6>
             </div>
         </div>
-        <div class="w-full">
-            <h6 class="text-1xl font-mono">
-                Dex is a playful yet powerful tool that transforms the way we think about password security. Imagine turning your sensitive information into a secret code, where each password becomes a hidden message in Morse code or Binary, readable only by you. It’s like hiding your secrets in plain sight, with simple, fun codes that offer robust protection. With Dex, securing everything from diary entries to important accounts becomes not only easy but also an enjoyable experience. It’s privacy made personal, creative, and secure—protecting your data in a way that feels both clever and effortless.
-	    </h6>
-	</div>
-                   
+
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <div class="flex items-start mb-4">
+                <img src="dex.png" alt="Dex Logo" class="w-16 h-16 mr-4 rounded-lg">
+                <div>
+                    <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">Dex</span></h5>
+                    <p>Since November 2024 to Present</p>
+                </div>
             </div>
-
-
-
-	    <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-
-<div class="flex items-start mb-4">
-            <img src="thoughthouse.png" alt="Thought House Logo" class="w-16 h-16 mr-4 rounded-lg">
-            <div>
-                <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">Thought House</span></h5>
-                <p>Since November 2024 to Present</p>
+            <div class="w-full">
+                <h6 class="text-1xl font-mono">
+                    Dex is a playful yet powerful tool that transforms the way we think about password security. Imagine turning your sensitive information into a secret code, where each password becomes a hidden message in Morse code or Binary, readable only by you. It's like hiding your secrets in plain sight, with simple, fun codes that offer robust protection. With Dex, securing everything from diary entries to important accounts becomes not only easy but also an enjoyable experience. It's privacy made personal, creative, and secure—protecting your data in a way that feels both clever and effortless.
+                </h6>
             </div>
         </div>
-        <div class="w-full">
-            <h6 class="text-1xl font-mono">
-              Thought House is your sanctuary for words that resonate. Whether you’re looking to add a spark to your social media posts, lift your spirits, or find that unforgettable line for a speech, we’ve got you covered.
 
-            Thought House curates quotes that fit any occasion, making it easy to save, savor, and use them whenever inspiration calls. With us, words aren’t just words—they’re tools for connection, reflection, and expression. Explore, find your favorites, and let Thought House be the companion to your moments of inspiration.
-            </h6>
-	</div>
-                   
-	    </div>
-
-
-	    <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-
-<div class="flex items-start mb-4">
-            <img src="youtube.jpeg" alt="YouTube Logo" class="w-16 h-16 mr-4 rounded-lg">
-            <div>
-                <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">YouTube</span></h5>
-                <p>Since September 2024 to Present</p>
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <div class="flex items-start mb-4">
+                <img src="thoughthouse.png" alt="Thought House Logo" class="w-16 h-16 mr-4 rounded-lg">
+                <div>
+                    <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">Thought House</span></h5>
+                    <p>Since November 2024 to Present</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <h6 class="text-1xl font-mono">
+                    Thought House is your sanctuary for words that resonate. Whether you're looking to add a spark to your social media posts, lift your spirits, or find that unforgettable line for a speech, we've got you covered. Thought House curates quotes that fit any occasion, making it easy to save, savor, and use them whenever inspiration calls. With us, words aren't just words—they're tools for connection, reflection, and expression. Explore, find your favorites, and let Thought House be the companion to your moments of inspiration.
+                </h6>
             </div>
         </div>
-        <div class="w-full">
-            <h6 class="text-1xl font-mono">
-                On my YouTube channel, I share content that explores the world of student life and technology. My goal is to provide valuable insights, tips, and relatable experiences that can help students navigate their academic journey, stay updated on tech trends, and make the most of their everyday lives. From study strategies to the latest tech tools, my videos are aimed at making life easier and more exciting for students everywhere.
-            </h6>
-	</div>
-                   
+
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <div class="flex items-start mb-4">
+                <img src="youtube.jpeg" alt="YouTube Logo" class="w-16 h-16 mr-4 rounded-lg">
+                <div>
+                    <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">YouTube</span></h5>
+                    <p>Since September 2024 to Present</p>
+                </div>
             </div>
-
-
-<div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-<div class="flex items-start mb-4">
-            <img src="sst.png" alt="Scaler School of Technology Logo" class="w-16 h-16 mr-4 rounded-lg">
-            <div>
-                <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">Scaler School of Technology's YIIC Internship</span></h5>
-                <p>Since June 2024 to September 2024</p>
+            <div class="w-full">
+                <h6 class="text-1xl font-mono">
+                    On my YouTube channel, I share content that explores the world of student life and technology. My goal is to provide valuable insights, tips, and relatable experiences that can help students navigate their academic journey, stay updated on tech trends, and make the most of their everyday lives. From study strategies to the latest tech tools, my videos are aimed at making life easier and more exciting for students everywhere.
+                </h6>
             </div>
         </div>
-        <div class="w-full">
-            <h6 class="text-1xl font-mono">
-                The YIIC Internship Program is a comprehensive learning experience designed to equip aspiring tech professionals with practical skills and industry insights. Beyond hands-on project work, YIIC provides workshops and seminars on cutting-edge technology trends, offering interns a well-rounded education that extends beyond the classroom. The program emphasizes networking, giving interns the chance to connect with experienced professionals and like-minded peers, fostering valuable industry relationships. Ultimately, YIIC is dedicated to nurturing young talent, empowering interns to develop their potential as the next generation of tech innovators and leaders.
-            </h6>
-	</div>
 
-                   
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <div class="flex items-start mb-4">
+                <img src="sst.png" alt="Scaler School of Technology Logo" class="w-16 h-16 mr-4 rounded-lg">
+                <div>
+                    <h5 class="text-4xl mb-1"><span class="text-blue-500 font-bold">Scaler School of Technology's YIIC Internship</span></h5>
+                    <p>Since June 2024 to September 2024</p>
+                </div>
             </div>
-
-
-	    
-
-	    <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-<h2 class="text-2xl text-black font-bold mb-2"><span class="text-pink-500 font-bold">Technical Skills</span></h2>
-      <ul class="space-y-1">
-        <li>- HTML</li>
-        <li>- CSS</li>
-        <li>- JavaScript</li>
-        <li>- Python</li>
-	    <li>- UI/UX</li>
-	    <li>- C</li>
-        <li>- C++</li>
-	    <li>- Tailwind CSS</li>
-        <li>- Product Design</li>
-      </ul>
-
-                   
+            <div class="w-full">
+                <h6 class="text-1xl font-mono">
+                    The YIIC Internship Program is a comprehensive learning experience designed to equip aspiring tech professionals with practical skills and industry insights. Beyond hands-on project work, YIIC provides workshops and seminars on cutting-edge technology trends, offering interns a well-rounded education that extends beyond the classroom. The program emphasizes networking, giving interns the chance to connect with experienced professionals and like-minded peers, fostering valuable industry relationships. Ultimately, YIIC is dedicated to nurturing young talent, empowering interns to develop their potential as the next generation of tech innovators and leaders.
+                </h6>
             </div>
+        </div>
 
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <h2 class="text-2xl text-primary font-bold mb-2">Technical Skills</h2>
+            <ul class="space-y-1">
+                <li>- HTML</li>
+                <li>- CSS</li>
+                <li>- JavaScript</li>
+                <li>- Python</li>
+                <li>- UI/UX</li>
+                <li>- C</li>
+                <li>- C++</li>
+                <li>- Tailwind CSS</li>
+                <li>- Product Design</li>
+            </ul>
+        </div>
 
-	    <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <h2 class="text-2xl text-primary font-bold mb-2">Tools I know</h2>
+            <ul class="space-y-1">
+                <li>- Github</li>
+                <li>- VS Code</li>
+                <li>- Figma</li>
+                <li>- Canva</li>
+            </ul>
+        </div>
 
-<h2 class="text-2xl text-black font-bold mb-2"><span class="text-pink-500 font-bold">Tools I know</span></h2>
-      <ul class="space-y-1">
-        <li>- Github</li>
-        <li>- VS Code</li>
-        <li>- Figma</li>
-        <li>- Canva</li>
-      </ul>
-
-                   
-	    </div>
-
-	    <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-
-<h2 class="text-2xl text-black font-bold mb-2"><span class="text-pink-500 font-bold">Languages I Speak</span></h2>
-      <ul class="space-y-1">
-        <li>- English</li>
-        <li>- Hindi</li>
-        <li>- Bengali</li>
-	    <li>- Assamese</li>
-	    <li>- Rajbongshi</li>
-      </ul>
-                   
-            </div>
-
-
-
-
-
-
-
-
-
-                    
-
-
-
-         </div>
-
-
-
-     </div>
-
-
-
-
-
-
-
-   </main>
-
-
-
-
-
-
+        <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300 mb-4">
+            <h2 class="text-2xl text-primary font-bold mb-2">Languages I Speak</h2>
+            <ul class="space-y-1">
+                <li>- English</li>
+                <li>- Hindi</li>
+                <li>- Bengali</li>
+                <li>- Assamese</li>
+                <li>- Rajbongshi</li>
+            </ul>
+        </div>
+    </main>
 
     <footer class="bg-secondary border-t-2 border-primary p-4 text-center">
-
-
-
         <div class="bg-secondary border-2 border-primary rounded-xl p-6 hover:shadow-lg hover:shadow-primary/50 transition duration-300">
-
-
-
-                    <h2 class="text-2xl font-bold mb-4">Follow Me on my Socials</h2>
-
-
-
-<div class="mt-4 flex justify-center space-x-4">
-
-
-
-
-
-
-
- <div class="border-2 border-primary p-2 rounded-lg">   
-
-
-
-            <a href="https://github.com/Subhadeep-Paul5" class="text-white hover:text-primary transition-colors duration-300">
-
-
-
-                <i data-lucide="github" class="w-8 h-8"></i>
-
-
-
-            </a>
-
-
-
- </div>
-
-
-
-
-
-
-
-    <div class="border-2 border-primary p-2 rounded-lg">
-
-
-
-            <a href="https://www.linkedin.com/in/subhadeep-paul5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white hover:text-primary transition-colors duration-300">
-
-
-
-                <i data-lucide="linkedin" class="w-8 h-8"></i>
-
-
-
-            </a>
-
-
-
-    </div>
-
-
-
-    <div class="border-2 border-primary p-2 rounded-lg">
-
-
-
-            <a href="https://x.com/Subhadeep_Paul5?t=dZD27rVag-UfFuHXE4Pptg&s=09" class="text-white hover:text-primary transition-colors duration-300">
-
-
-
-                <i data-lucide="twitter" class="w-8 h-8"></i>
-
-
-
-            </a>
-
-
-
-</div>
-
-
-
-    <div class="border-2 border-primary p-2 rounded-lg">
-
-
-
-            <a href="https://www.instagram.com/subhadeep.paul5/profilecard/?igsh=a21wbDh2ZWw5cTZh" class="text-white hover:text-primary transition-colors duration-300">
-
-
-
-        <i data-lucide="instagram" class="w-8 h-8"></i>
-
-
-
-            </a>
-
-
-
+            <h2 class="text-2xl font-bold mb-4">Follow Me on my Socials</h2>
+            <div class="mt-4 flex justify-center space-x-4">
+                <div class="border-2 border-primary p-2 rounded-lg">   
+                    <a href="https://github.com/Subhadeep-Paul5" class="text-primary hover:text-gray-600 transition-colors duration-300">
+                        <i data-lucide="github" class="w-8 h-8"></i>
+                    </a>
+                </div>
+                <div class="border-2 border-primary p-2 rounded-lg">
+                    <a href="https://www.linkedin.com/in/subhadeep-paul5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-primary hover:text-gray-600 transition-colors duration-300">
+                        <i data-lucide="linkedin" class="w-8 h-8"></i>
+                    </a>
+                </div>
+                <div class="border-2 border-primary p-2 rounded-lg">
+                    <a href="https://x.com/Subhadeep_Paul5?t=dZD27rVag-UfFuHXE4Pptg&s=09" class="text-primary hover:text-gray-600 transition-colors duration-300">
+                        <i data-lucide="twitter" class="w-8 h-8"></i>
+                    </a>
+                </div>
+                <div class="border-2 border-primary p-2 rounded-lg">
+                    <a href="https://www.instagram.com/subhadeep.paul5/profilecard/?igsh=a21wbDh2ZWw5cTZh" class="text-primary hover:text-gray-600 transition-colors duration-300">
+                        <i data-lucide="instagram" class="w-8 h-8"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4">&copy; 2024 Subhadeep Paul. All rights reserved.</p>
         </div>
-
-
-
-</div>
-
-
-
-            <br><br>
-
-
-
-        <p>&copy; 2024 Subhadeep Paul. All rights reserved.</p>
-
-
-
     </footer>
-
-
-
 </body>
-
-
-
-	    </html>
-			       
+	</html>
