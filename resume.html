@@ -37,10 +37,14 @@
             position: absolute;
             left: 0;
             top: 0;
-            bottom: 0;
+            bottom: auto;
             width: 2px;
+		height: calc(100% - 3rem);
             background-color: #4a5568;
-        }
+	}
+	    .education-item:last-of-type::before {
+    display: none;
+}
         .education-item {
             position: relative;
             padding-bottom: 3rem;
@@ -85,18 +89,7 @@
             border-radius: 50%;
         }
 
-	    .no-timeline::before {
-    display: none;
-}
-
-.no-timeline .logo {
-    position: static;
-    margin-left: 0;
-}
-
-.no-timeline .details {
-    padding-left: 0;
-}
+	    
     </style>
 </head>
 <body class="bg-secondary text-primary min-h-screen font-mono flex flex-col">
@@ -171,7 +164,7 @@
                 </div>
             </div>
 
-<div class="education-item no-timeline">
+<div class="education-item">
                 <div class="logo">
                     <img src="thoughthouse.png" alt="Thought House Logo" />
                 </div>
